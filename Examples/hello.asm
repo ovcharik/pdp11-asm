@@ -1,5 +1,5 @@
-# añd address:       0177566
-# añd check address: 0177564
+# acd address:       0177566
+# acd check address: 0177564
 
 .SECTION .DATA
     HELLO_STR: .STRING "HELLO, WORLD!"
