@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <regex>
 
 #include "Compiler.h"
 
@@ -9,18 +8,19 @@ int main(int argc, char ** argv)
 {
 	if (argc != 3)
 	{
-		std::cerr << "Use as: ErshovAssembler <input file> <output file>" << std::endl;
+		std::cerr << "Usage: pdp11-asm <input file> <output file>" << std::endl;
 		return 1;
 	}
 
 	std::ifstream ifs(argv[1]);
-	std::ofstream ofs(argv[2]);
 	if (ifs.is_open())
 	{
 		try {
 			Compiler c(ifs);
 			c.link();
 			c.compile();
+			
+			std::ofstream ofs(argv[2]);
 			c.write(ofs);
 		} catch (std::string error) {
 			std::cerr << error << std::endl;
