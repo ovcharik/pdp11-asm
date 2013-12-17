@@ -12,5 +12,6 @@
 *.lai
 *.la
 *.a
+
 Debug/
 Release/

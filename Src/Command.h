@@ -119,8 +119,8 @@ protected:
 		m_code_map["BICW" ] = SCommand(Code::BICW,  Type::Dubcast);
 		m_code_map["BISW" ] = SCommand(Code::BISW,  Type::Dubcast);
 
-		m_code_map["ADD"  ] = SCommand(Code::ADD,   Type::DubcastArth);
-		m_code_map["SUB"  ] = SCommand(Code::SUB,   Type::DubcastArth);
+		m_code_map["ADD"  ] = SCommand(Code::ADD,   Type::Dubcast);
+		m_code_map["SUB"  ] = SCommand(Code::SUB,   Type::Dubcast);
 		m_code_map["MUL"  ] = SCommand(Code::MUL,   Type::DubcastArth);
 		m_code_map["DIV"  ] = SCommand(Code::DIV,   Type::DubcastArth);
 		m_code_map["ASH"  ] = SCommand(Code::ASH,   Type::DubcastArth);

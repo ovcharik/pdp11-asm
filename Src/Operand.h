@@ -122,6 +122,11 @@ public:
 				catch (...) {
 					goto PARSE_ERROR;
 				}
+				if (dec)
+				{
+					dec = false;
+					index = -index;
+				}
 				if (matches[5].length() == 0)
 				{
 					value = index;
