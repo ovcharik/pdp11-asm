@@ -1,6 +1,6 @@
 # acd address:       0177566
 # acd check address: 0177564
-# stack start:       0xFF
+# stack start:       0200
 
 # push: MOVW <data>, -(R6)
 # pop:  MOVW (R6)+, <data>
