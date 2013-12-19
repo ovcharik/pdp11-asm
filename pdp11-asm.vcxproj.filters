@@ -18,6 +18,9 @@
     <None Include="examples\hello.asm">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="Examples\trapeze.asm">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">

@@ -419,7 +419,7 @@ public:
 	virtual void write(Binary& bin) const
 	{
 		auto words = get_binary();
-		for (auto w : words)
+		for (unsigned short w : words)
 			bin << w;
 	};
 };

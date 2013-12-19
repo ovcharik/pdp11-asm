@@ -38,7 +38,7 @@ public:
 
 	void write(std::ofstream& ofs) const
 	{
-		ofs.write(m_buffer, BUFFER_SIZE);
+		ofs.write(m_buffer, (std::streamsize)BUFFER_SIZE);
 	}
 
 	friend std::ofstream& operator<<(std::ofstream& ofs, const Binary& bin)

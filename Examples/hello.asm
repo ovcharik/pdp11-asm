@@ -13,7 +13,7 @@
 
 MAIN:
     # init stack
-    MOVW    0xFF, R6
+    MOVW    0200, R6
 
     MOVW    HELLO_STR, -(R6)
     JSR     R5, (PUTS)

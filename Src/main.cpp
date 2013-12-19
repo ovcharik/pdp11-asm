@@ -20,7 +20,7 @@ int main(int argc, char ** argv)
 			c.link();
 			c.compile();
 			
-			std::ofstream ofs(argv[2]);
+			std::ofstream ofs(argv[2], std::ios::binary);
 			c.write(ofs);
 		} catch (std::string error) {
 			std::cerr << error << std::endl;
