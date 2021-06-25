@@ -41,9 +41,9 @@ public:
 		SWAB  = 0x00C0,   XOR   = 0x7800,   BLE   = 0x0700,   RESET = 0x0005,
 		SXT   = 0x0DC0,   /* float arth */  BHI   = 0x8200,   WAIT  = 0x0001,
 		/* unicast b */   FADD  = 0x7A00,   BLOS  = 0x8300,   HALT  = 0x0000,
-        CLRB  = 0x8A00,   FSUB  = 0x7A08,                     /*  other 3  */
-        INCB  = 0x8A80,   FMUL  = 0x7A10,                     CLC   = 0x00A1,
-        DECB  = 0x8AC0,   FDIV  = 0x7A18,                     CLV   = 0x00A2,
+		CLRB  = 0x8A00,   FSUB  = 0x7A08,                     /*  other 3  */
+		INCB  = 0x8A80,   FMUL  = 0x7A10,                     CLC   = 0x00A1,
+		DECB  = 0x8AC0,   FDIV  = 0x7A18,                     CLV   = 0x00A2,
 		COMB  = 0x8A40,   /*  dcast b  */                     CLZ   = 0x00A4,
 		TSTB  = 0x8BC0,   MOVB  = 0x9000,                     CLN   = 0x00A8,
 		NEGB  = 0x8B00,   CMPB  = 0xA000,                     SEC   = 0x00B1,
